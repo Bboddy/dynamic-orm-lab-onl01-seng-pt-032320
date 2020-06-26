@@ -33,7 +33,7 @@ class InteractiveRecord
     array = []
     self.class.column_names.each do |col_name|
       if send(col_name) != nil
-        array << "#{send(col_name)}"
+        array << "'#{send(col_name)}'"
       end
     end
     array.join(", ")
