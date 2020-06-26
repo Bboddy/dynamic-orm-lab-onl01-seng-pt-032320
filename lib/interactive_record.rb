@@ -45,6 +45,6 @@ class InteractiveRecord
     SQL
     
     DB[:conn].execute(sql, table_name_for_insert, col_names_for_insert, values_for_insert)
-    @id = 
+    @id = DB[:conn].execute("SELECT last_in")
   end
 end
