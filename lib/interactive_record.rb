@@ -15,5 +15,9 @@ class InteractiveRecord
     end
   end
   
-  def initialize
+  def initialize(options={})
+    options.each { |
+      
+    }
+  end
 end
