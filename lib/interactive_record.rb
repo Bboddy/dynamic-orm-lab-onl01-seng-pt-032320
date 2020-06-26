@@ -44,6 +44,6 @@ class InteractiveRecord
       INSERT INTO ? (?)
     SQL
     
-    DB[:conn].execute(sql, table_name_for_insert,)
+    DB[:conn].execute(sql, table_name_for_insert, col_names_for_insert)
   end
 end
