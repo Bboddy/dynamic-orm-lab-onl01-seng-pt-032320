@@ -35,7 +35,7 @@ class InteractiveRecord
         (array ||= []) << "#{send(col_name)}"
       end
     end
-    values.join(", ")
+    array.join(", ")
   end
   
   def save
