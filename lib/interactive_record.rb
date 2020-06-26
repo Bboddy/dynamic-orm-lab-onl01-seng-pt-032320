@@ -14,4 +14,6 @@ class InteractiveRecord
       row["name"]
     end
   end
+  
+  def ini
 end
