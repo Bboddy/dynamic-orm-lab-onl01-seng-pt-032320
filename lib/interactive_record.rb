@@ -29,6 +29,11 @@ class InteractiveRecord
     self.class.column_names.delete_if {|column| column == "id"}.join(", ")
   end
   
+  def values_for_insert
+    values = []
+    
+  end
+  
   def save
     sql = <<-SQL
       
