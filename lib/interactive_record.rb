@@ -15,5 +15,5 @@ class InteractiveRecord
     end
   end
   
-  def ini
+  def initialize
 end
