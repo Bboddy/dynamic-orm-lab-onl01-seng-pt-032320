@@ -52,7 +52,7 @@ class InteractiveRecord
   end
   
   def self.find_by(whatever)
-    sql = "SELECT * FROM #{self.table_name} WHERE #{whatever.key[0].to_s} = '#{whatever.values[0].to_s}'"
+    sql = "SELECT * FROM #{self.table_name} WHERE #{whatever.keys[0].to_s} = '#{whatever.values[0].to_s}'"
     DB[:conn].execute(sql)
-  end
+end
 end
