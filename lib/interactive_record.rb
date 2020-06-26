@@ -41,7 +41,9 @@ class InteractiveRecord
   
   def save
     sql = <<-SQL
-      
+      INSERT INTO ? (?)
     SQL
+    
+    DB[:conn].execute(sql, table_name_for_insert,)
   end
 end
