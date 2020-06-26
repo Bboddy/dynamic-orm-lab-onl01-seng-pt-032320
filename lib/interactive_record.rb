@@ -20,4 +20,8 @@ class InteractiveRecord
       self.send("#{property}=", value)
     }
   end
+  
+  def save
+    sql 
+  end
 end
