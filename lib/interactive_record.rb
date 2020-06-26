@@ -22,6 +22,8 @@ class InteractiveRecord
   end
   
   def save
-    sql 
+    sql = <<-SQL
+      
+    SQL
   end
 end
