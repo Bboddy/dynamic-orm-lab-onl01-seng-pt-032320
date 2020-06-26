@@ -46,8 +46,8 @@ class InteractiveRecord
     @id = DB[:conn].execute(sql)[0][0]
   end
   
-  def find_by(name)
-    sql = "SELECT * FROM #{self.table_name} WHERE #{name.key[0].to_s} = #{name.values[0].to_s}"
+  def find_by(whatever)
+    sql = "SELECT * FROM #{self.table_name} WHERE #{whatever.key[0].to_s} = #{whatever.values[0].to_s}"
     DB[:conn].execute(sql)
   end
 end
