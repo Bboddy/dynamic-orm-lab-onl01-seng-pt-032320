@@ -46,7 +46,7 @@ class InteractiveRecord
     @id = DB[:conn].execute(sql)[0][0]
   end
   
-  def find_by_name
+  def find_by_name(name)
     
   end
 end
