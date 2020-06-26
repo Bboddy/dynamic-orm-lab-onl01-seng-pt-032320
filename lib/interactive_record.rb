@@ -14,10 +14,4 @@ class InteractiveRecord
       row["name"]
     end
   end
-  
-  def initialize(name, grade, id)
-    @name = name
-    @grade = grade
-    @id = id
-  end
 end
